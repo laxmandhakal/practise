@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#parent {
+    display: flex;
+    background-color: black;
+    color: blue;
+}
+
+.control {
+    display: none;
+}
+
+.child {
+    margin-right: 4%;
+    font-size: 1.5rem;
+}
+
+#parent {
+    background-color: brown;
+}
+
+@media (max-width:645px) {
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .control {
+        display: inherit;
+        color: aqua;
+        font-size: 1.5rem;
+        margin-right: 4%;
+    }
+    .child {
+        margin-right: 10%;
+        display: none;
+    }
+}
